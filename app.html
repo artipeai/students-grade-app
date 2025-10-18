@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades App by Fahim Abrar</title>
+    <!-- Add Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body style="margin: 0; padding: 0; min-height: 100vh; background-image: url('assets/bg1.png'); background-size: cover; background-position: center; display: flex; justify-content: center; align-items: center;"></body>
+<div class="container">
+    <div class="header-box animate-fadeIn">
+        <div class="header-row">
+            <h1 class="title">
+                <i class="fa-solid fa-chart-column" style="color:#a78bfa"></i>
+                Student Grades App
+            </h1>
+            <button id="toggleDark" class="toggle-dark">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+        <div class="input-section">
+            <div class="input-row">
+                <input type="text" id="studentName" placeholder="Student Name" class="input" />
+                <input type="number" id="studentMarks" placeholder="Marks" class="input marks-input" />
+                <button id="addStudent" class="add-btn">
+                    <i class="fa-solid fa-plus"></i>
+                    Add
+                </button>
+            </div>
+            <div id="studentsList" class="students-list">
+                <!-- Example Row -->
+                <!-- <div class="student-row">
+                    <span class="student-name">Fahim</span>
+                    <span class="student-marks">90</span>
+                </div> -->
+            </div>
+            <div id="averageBox" class="average-box">
+                <i class="fa-solid fa-calculator"></i>
+                Average Grade: <span id="averageMarks" style="margin-left:0.5rem;">0</span>
+            </div>
+        </div>
+        <div class="footer">
+            <img src="assets/profile.jpg" alt="Fahim Abrar Niloy" class="profile-img">
+            Made by Fahim Abrar Niloy
+            <div class="footer-links">
+                <a href="https://github.com/fahimabrar" target="_blank" class="footer-link github"><i class="fab fa-github"></i>GitHub</a>
+                <a href="https://linkedin.com/in/fahimabrar" target="_blank" class="footer-link linkedin"><i class="fab fa-linkedin"></i>LinkedIn</a>
+                <a href="https://twitter.com/fahimabrar" target="_blank" class="footer-link twitter"><i class="fab fa-twitter"></i>Twitter</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const toggleBtn = document.getElementById('toggleDark');
+    toggleBtn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+    });
+</script>
+</body>
+</html></div>
